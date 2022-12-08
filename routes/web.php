@@ -29,7 +29,7 @@ Route::get('/', function () {
 	Cache::put('instagram_authorization_code', $code);
 	Cache::put('instagram_authorization_code_expiration', now());
 
-    return view('welcome');
+	return view('welcome');
 });
 
 Route::get('/make_instagram_authorization', function() {
